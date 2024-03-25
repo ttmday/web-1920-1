@@ -1,0 +1,23 @@
+.grid-products {
+    display: grid;
+    gap: 1.75rem;
+    place-content: center;
+
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+
+
+}
+
+
+.grid-products div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .grid-products {
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    }
+}

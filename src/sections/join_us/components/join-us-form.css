@@ -1,0 +1,35 @@
+.join-us-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.75rem;
+    align-items: center;
+    width: 100%;
+}
+
+.join-us-form>input,
+.join-us-form>div>input,
+.join-us-form>textarea {
+    background: #fafafa;
+    border-radius: 6px;
+    outline: none;
+
+    width: 100%;
+    color: #1e1212;
+
+    max-width: 576px;
+
+    font-size: 16px;
+    padding: .75rem;
+}
+
+.join-us-form>input,
+.join-us-form>div>input {
+    height: 48px;
+}
+
+.join-us-form>input,
+.join-us-form>div>input::placeholder,
+.join-us-form>textarea::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}

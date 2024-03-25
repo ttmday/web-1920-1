@@ -1,0 +1,53 @@
+.section-hero-web {
+    height: 100dvh;
+    max-height: 100vh;
+
+
+}
+
+.section-hero-web::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+
+    background-image: url('/images/png/web-1920-hero.png');
+    isolation: isolate;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.section-hero-web::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    mask-image: linear-gradient(to bottom, black 100%, transparent 20%);
+    backdrop-filter: drop-shadow(0 0 0 rgb(0 0 0));
+    background-color: rgb(0 0 0 /.11);
+}
+
+.section-hero-web nav {
+    background-color: rgb(0 0 0 /.12);
+    mask-image: linear-gradient(to bottom, black 68%, transparent 100%);
+}
+
+/* .section-hero-web nav {
+    background: linear-gradient(to bottom, rgb(0 0 0 / .45) 100px, transparent 20%, transparent 20%, rgb(0 0 0 / .2) 20px);
+
+} */

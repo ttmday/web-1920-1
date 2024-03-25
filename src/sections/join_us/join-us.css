@@ -1,0 +1,16 @@
+.join-us-section {
+    position: relative;
+    width: 100%;
+
+    background: #1e1212;
+}
+
+@media (max-width: 1440px) {
+    .join-us-section {
+        background: #221a1a;
+    }
+}
+
+.join-us-bg {
+    mask-image: linear-gradient(138deg, rgba(78, 80, 88, 1) 92%, rgba(28, 15, 15, 1) 56%);
+}

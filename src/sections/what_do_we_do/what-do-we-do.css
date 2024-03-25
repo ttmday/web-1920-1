@@ -1,0 +1,38 @@
+.what-do-we-do-section {
+    display: grid;
+    max-width: 1280px;
+    width: 100%;
+    padding: 6rem 1rem;
+
+    gap: 1.75rem;
+    margin: auto;
+    place-content: center;
+}
+
+@media (min-width: 768px) {
+    .what-do-we-do-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: dense;
+        height: 764px;
+        max-height: 100vh;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .what-do-we-do-section {
+        grid-template-areas: 'title' 'description' 'image';
+        place-items: center;
+        gap: 1rem;
+        grid-template-areas:
+            'title'
+            'image'
+            'description';
+    }
+
+    .what-do-we-do-section img {
+        grid-area: image;
+    }
+}
